@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mavi Gold | طلا و جواهر</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- لینک فونت‌های گوگل برای زیبایی بیشتر (فونت فارسی و انگلیسی) -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700&family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ================= منوی کشویی (Drawer Menu) ================= -->
+    <div class="menu-overlay" id="menuOverlay">
+        <div class="drawer-menu">
+            <button class="close-btn" id="closeMenu">✕</button>
+            
+            <ul class="menu-list">
+                <li><a href="#">خانه</a></li>
+                <li>
+                    <a href="#">فروشگاه <span class="arrow">‹</span></a>
+                </li>
+                <li><a href="#">سوالات متداول</a></li>
+                <li><a href="#">بلاگ</a></li>
+                <li><a href="#">شعب ما</a></li>
+                <li><a href="#">درباره ما</a></li>
+                <li>
+                    <a href="#">تماس با ما <span class="arrow">‹</span></a>
+                </li>
+            </ul>
+
+            <div class="drawer-footer">
+                <div class="ai-assistant">✨ دستیار هوشمند</div>
+                <a href="mailto:info@mavigoldgallery.com" class="email-link">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    info@mavigoldgallery.com
+                </a>
+                <div class="gold-price-bottom">قیمت طلای ۱۸ عیار : ۲۵,۳۳۴,۰۰۰ تومان</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= هدر اصلی سایت ================= -->
+    <header class="main-header">
+        <div class="top-bar">
+            <!-- منوی همبرگری برای باز کردن سایدبار -->
+            <button class="hamburger" id="openMenu">
+                <span></span><span></span><span></span>
+            </button>
+            
+            <a href="#" class="logo-container">
+                <!-- استفاده از لوگو طبق فایل گیت‌هاب -->
+                <img src="Logo.png" alt="Mavi Gold Logo" class="site-logo">
+            </a>
+            
+            <div class="header-icons">
+                <button class="icon-btn">🔍</button>
+                <button class="icon-btn">🛍️</button>
+            </div>
+        </div>
+
+        <div class="price-ticker">
+            قیمت طلای ۱۸ عیار : ۲۵,۳۳۴,۰۰۰ تومان
+        </div>
+    </header>
+
+    <!-- ================= محتوای اصلی (بنرها) ================= -->
+    <main>
+        <!-- بنر اصلی هدر (استفاده از عکس Header.png) -->
+        <section class="hero-section">
+            <img src="Header.png" alt="Mavi Gold 18K Gold Jewelry" class="hero-image">
+            
+            <!-- بخش اسنپ پی زیر بنر اصلی -->
+            <div class="snapp-pay-banner">
+                <div class="snapp-logo">
+                    <span style="color: #00b4d8; font-weight: bold; font-size: 18px;">Snapp!</span><br>
+                    <span style="color: #0077b6; font-weight: bold; font-size: 18px;">Pay</span>
+                </div>
+                <div class="divider"></div>
+                <div class="snapp-text">خرید اقساطی بدون کارمزد</div>
+            </div>
+        </section>
+
+        <!-- بنرهای دوتایی پایین -->
+        <section class="sub-banners">
+            <div class="banner-item">
+                <!-- از آنجا که عکس این بخش در گیت‌هاب شما نیست، یک پس‌زمینه رنگی و متن قرار دادم. در صورت نیاز عکس واقعی را جایگزین کنید -->
+                <div class="placeholder-img" style="background-color: #f5ebd9;">💍</div> 
+            </div>
+            <div class="banner-item">
+                <div class="placeholder-img" style="background-color: #f7eddc;">
+                    <span class="ai-assistant-small">✨ دستیار هوشمند</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= نوار پایین (Bottom Navigation) ================= -->
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item active">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+            <span>صفحه اصلی</span>
+        </a>
+        <a href="#" class="nav-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            <span>فروشگاه</span>
+        </a>
+        <a href="#" class="nav-item">
+            <div class="cart-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"/></svg>
+                <span class="cart-badge">0</span>
+            </div>
+            <span>سبد خرید</span>
+        </a>
+    </nav>
+
+    <script>
+        // کدهای جاوااسکریپت برای باز و بسته کردن منوی کشویی
+        const openMenuBtn = document.getElementById('openMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        openMenuBtn.addEventListener('click', () => {
+            menuOverlay.classList.add('active');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            menuOverlay.classList.remove('active');
+        });
+
+        // بستن منو با کلیک روی پس‌زمینه
+        menuOverlay.addEventListener('click', (e) => {
+            if (e.target === menuOverlay) {
+                menuOverlay.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
